@@ -4,6 +4,6 @@ live link: [https://youtube-fanfest2021.netlify.app](https://youtube-fanfest2021
 
 ## Site Features
 
-- You can see all the top YouTubers.
-- You can invite YouTubers to the event.
-- You can see invited YouTubers on your list.
+- Invite YouTubers to Your event.
+- See invited YouTubers on your list.
+- Total cost for inviting.
