@@ -5,6 +5,7 @@ import SubText from "./SubText";
 
 import "./Guest.css";
 const Guest = (props) => {
+  // this state responsible for disabling invite button for invited guests
   const [Invited, setInvited] = useState(false);
 
   const { addGuestHandler, guestInfo } = props;
