@@ -6,11 +6,7 @@ import "./Guest.css";
 const Guest = () => {
   return (
     <div className='guest'>
-      <img
-        src='https://i.insider.com/5ca6083886291369fa2eacc2?width=700&format=jpeg&auto=webp'
-        alt=''
-        width='100%'
-      />
+      <img src='https://i.insider.com/5ca6083886291369fa2eacc2?width=700&format=jpeg&auto=webp' />
       <h4 className='channel-name'>VanossGaming</h4>
 
       <SubText title={"AKA"} value={"Evan Fong"}></SubText>

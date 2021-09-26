@@ -5,6 +5,7 @@
   border-radius: 15px;
 }
 .guest img {
+  width: 100%;
   border-radius: 15px;
 }
 .guest .channel-name {
