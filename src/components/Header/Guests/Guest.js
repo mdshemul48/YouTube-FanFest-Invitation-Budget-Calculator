@@ -21,9 +21,9 @@ const Guest = () => {
         <AiOutlineUserAdd /> Invite
       </button>
 
-      <div>
-        <AiFillYoutube />
-        <FaFacebook />
+      <div className='user-social-media'>
+        <AiFillYoutube className='icon' />
+        <FaFacebook className='icon' />
       </div>
     </div>
   );
