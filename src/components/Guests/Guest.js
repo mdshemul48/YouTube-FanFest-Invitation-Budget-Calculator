@@ -26,7 +26,7 @@ const Guest = (props) => {
       <SubText title={"AKA"} value={name} />
       <SubText title={"Subscribers"} value={`${subs} million`} />
       <SubText title={"Location"} value={location} />
-      <SubText title={"Invitation Cost"} value={InvitationCost} />
+      <SubText title={"Invitation Cost"} value={InvitationCost + "$"} />
 
       {/* button for adding guest to the list */}
       <button
