@@ -1,7 +1,6 @@
 import React from "react";
 
-import { AiOutlineUserAdd, AiFillYoutube } from "react-icons/ai";
-import { FaFacebook } from "react-icons/fa";
+import { AiOutlineUserAdd } from "react-icons/ai";
 
 import SubText from "./SubText";
 
@@ -23,11 +22,6 @@ const Guest = (props) => {
       <button className='invite-button'>
         <AiOutlineUserAdd /> Invite
       </button>
-
-      <div className='user-social-media'>
-        <AiFillYoutube className='icon youtube' />
-        <FaFacebook className='icon facebook' />
-      </div>
     </div>
   );
 };
