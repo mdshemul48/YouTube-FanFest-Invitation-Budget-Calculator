@@ -8,7 +8,7 @@ const Guests = (props) => {
   return (
     <section className='all-guest'>
       {allGuest.map((guest) => (
-        <Guest guestInfo={guest}></Guest>
+        <Guest guestInfo={guest} />
       ))}
     </section>
   );

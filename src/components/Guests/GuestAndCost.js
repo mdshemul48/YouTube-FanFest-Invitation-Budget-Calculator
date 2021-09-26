@@ -15,8 +15,8 @@ const GuestAndCost = () => {
 
   return (
     <main className='main-container'>
-      <Guests allGuest={allGuest}></Guests>
-      <TotalCostCard></TotalCostCard>
+      <Guests allGuest={allGuest} />
+      <TotalCostCard />
     </main>
   );
 };

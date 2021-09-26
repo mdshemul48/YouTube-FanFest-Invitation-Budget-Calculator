@@ -4,8 +4,8 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Header></Header>
-      <GuestAndCost></GuestAndCost>
+      <Header />
+      <GuestAndCost />
     </>
   );
 }

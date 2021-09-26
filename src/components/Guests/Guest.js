@@ -15,10 +15,10 @@ const Guest = (props) => {
       <img src={image} />
       <h4 className='channel-name'>{channelName}</h4>
 
-      <SubText title={"AKA"} value={name}></SubText>
-      <SubText title={"Subscribers"} value={`${subs} million`}></SubText>
-      <SubText title={"Location"} value={location}></SubText>
-      <SubText title={"Invitation Cost"} value={InvitationCost}></SubText>
+      <SubText title={"AKA"} value={name} />
+      <SubText title={"Subscribers"} value={`${subs} million`} />
+      <SubText title={"Location"} value={location} />
+      <SubText title={"Invitation Cost"} value={InvitationCost} />
 
       <button className='invite-button'>
         <AiOutlineUserAdd /> Invite
