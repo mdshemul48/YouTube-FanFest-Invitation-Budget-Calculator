@@ -17,7 +17,7 @@
   color: #0f0e17;
 }
 
-.guest .invite-button {
+.guest .add-button {
   border: 0;
   text-decoration: none;
   padding: 0.5rem 1.5rem;
@@ -29,7 +29,9 @@
   color: rgb(255, 255, 254);
   margin: 5px 0;
 }
-
+.added {
+  background-color: #393e46 !important;
+}
 .user-social-media .icon {
   cursor: pointer;
 }

@@ -16,7 +16,9 @@ const TotalCostCard = (props) => {
       <hr className='line' />
 
       {invitedGuest.map((guest) => (
-        <h3>{guest.name}</h3>
+        <h3>
+          {guest.name} ({guest.channelName})
+        </h3>
       ))}
     </div>
   );

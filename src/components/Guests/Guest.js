@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { AiOutlineUserAdd } from "react-icons/ai";
 
@@ -6,12 +6,17 @@ import SubText from "./SubText";
 
 import "./Guest.css";
 const Guest = (props) => {
+  const [added, setadded] = useState(false);
+
   const { addGuestHandler, guestInfo } = props;
 
   const { channelName, name, location, subs, InvitationCost, image, id } =
     guestInfo;
 
-  const addGuestEventHandler = () => addGuestHandler(id);
+  const addGuestEventHandler = () => {
+    addGuestHandler(id);
+    setadded(true);
+  };
 
   return (
     <div className='guest'>
@@ -23,8 +28,12 @@ const Guest = (props) => {
       <SubText title={"Location"} value={location} />
       <SubText title={"Invitation Cost"} value={InvitationCost} />
 
-      <button className='invite-button' onClick={addGuestEventHandler}>
-        <AiOutlineUserAdd /> Invite
+      <button
+        className={`add-button ${added ? "added" : ""}`}
+        onClick={addGuestEventHandler}
+        disabled={added}
+      >
+        <AiOutlineUserAdd /> {added ? "added" : "add"}
       </button>
     </div>
   );
