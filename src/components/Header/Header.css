@@ -1,0 +1,20 @@
+header {
+  /* header alignment and color*/
+
+  color: #fffffe;
+  background-color: #0f0e17;
+  text-align: center;
+
+  padding: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+header .main-title {
+  font-weight: 500;
+}
+
+header .secondary-title {
+  font-weight: 400;
+  color: #a7a9be;
+}
