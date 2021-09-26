@@ -22,8 +22,8 @@ const Guest = () => {
       </button>
 
       <div className='user-social-media'>
-        <AiFillYoutube className='icon' />
-        <FaFacebook className='icon' />
+        <AiFillYoutube className='icon youtube' />
+        <FaFacebook className='icon facebook' />
       </div>
     </div>
   );
