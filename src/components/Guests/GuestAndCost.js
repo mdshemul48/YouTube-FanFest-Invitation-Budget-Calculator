@@ -14,10 +14,15 @@ const GuestAndCost = () => {
       .then((data) => setAllGuest(data));
   }, []);
 
+  const addGuestHandler = (id) => {
+    const selectedGuest = allGuest.find((guest) => guest.id === id);
+    setInvitedGuest([...invitedGuest, selectedGuest]);
+  };
+  console.log(invitedGuest);
   return (
     <main className='main-container'>
-      <Guests allGuest={allGuest} />
-      <TotalCostCard />
+      <Guests allGuest={allGuest} addGuestHandler={addGuestHandler} />
+      <TotalCostCard invitedGuest={invitedGuest} />
     </main>
   );
 };

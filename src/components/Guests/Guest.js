@@ -6,8 +6,12 @@ import SubText from "./SubText";
 
 import "./Guest.css";
 const Guest = (props) => {
-  const { channelName, name, location, subs, InvitationCost, image } =
-    props.guestInfo;
+  const { addGuestHandler, guestInfo } = props;
+
+  const { channelName, name, location, subs, InvitationCost, image, id } =
+    guestInfo;
+
+  const addGuestEventHandler = () => addGuestHandler(id);
 
   return (
     <div className='guest'>
@@ -19,7 +23,7 @@ const Guest = (props) => {
       <SubText title={"Location"} value={location} />
       <SubText title={"Invitation Cost"} value={InvitationCost} />
 
-      <button className='invite-button'>
+      <button className='invite-button' onClick={addGuestEventHandler}>
         <AiOutlineUserAdd /> Invite
       </button>
     </div>
