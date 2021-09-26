@@ -9,10 +9,22 @@
   border-radius: 15px;
 }
 .guest .channel-name {
-  margin-top: 0px;
+  margin-top: 2px;
   font-size: 2rem;
   line-height: 30px;
   font-weight: 700;
-  margin-bottom: 0.1rem;
+  margin-bottom: 5px;
   color: #0f0e17;
+}
+
+.guest .invite-button {
+  border: 0;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: rgb(255, 137, 6);
+  color: rgb(255, 255, 254);
 }

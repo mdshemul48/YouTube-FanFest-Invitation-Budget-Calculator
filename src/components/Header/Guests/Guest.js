@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
 
 import SubText from "./SubText";
 
@@ -13,6 +15,10 @@ const Guest = () => {
       <SubText title={"Subscribers"} value={"25.4 million"}></SubText>
       <SubText title={"Location"} value={"Canada"}></SubText>
       <SubText title={"Invitation Cost"} value={"100000$"}></SubText>
+
+      <button className='invite-button'>
+        <FontAwesomeIcon icon={faUserPlus} /> Invite
+      </button>
     </div>
   );
 };
