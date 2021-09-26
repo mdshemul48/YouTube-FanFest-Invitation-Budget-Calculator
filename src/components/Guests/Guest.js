@@ -6,7 +6,7 @@ import SubText from "./SubText";
 
 import "./Guest.css";
 const Guest = (props) => {
-  const [added, setadded] = useState(false);
+  const [Invited, setInvited] = useState(false);
 
   const { addGuestHandler, guestInfo } = props;
 
@@ -15,7 +15,7 @@ const Guest = (props) => {
 
   const addGuestEventHandler = () => {
     addGuestHandler(id);
-    setadded(true);
+    setInvited(true);
   };
 
   return (
@@ -29,11 +29,11 @@ const Guest = (props) => {
       <SubText title={"Invitation Cost"} value={InvitationCost} />
 
       <button
-        className={`add-button ${added ? "added" : ""}`}
+        className={`add-button ${Invited ? "Invited" : ""}`}
         onClick={addGuestEventHandler}
-        disabled={added}
+        disabled={Invited}
       >
-        <AiOutlineUserAdd /> {added ? "added" : "add"}
+        <AiOutlineUserAdd /> {Invited ? "Invited" : "Invite"}
       </button>
     </div>
   );
