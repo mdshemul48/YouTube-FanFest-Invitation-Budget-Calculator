@@ -14,6 +14,7 @@ const GuestAndCost = () => {
       .then((data) => setAllGuest(data));
   }, []);
 
+  // this function will add invited guest to the invitedGuest state arr
   const addGuestHandler = (id) => {
     const selectedGuest = allGuest.find((guest) => guest.id === id);
     setInvitedGuest([...invitedGuest, selectedGuest]);

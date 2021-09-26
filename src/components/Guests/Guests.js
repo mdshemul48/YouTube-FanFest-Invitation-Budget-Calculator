@@ -5,6 +5,7 @@ import Guest from "./Guest";
 import "./Guests.css";
 const Guests = (props) => {
   const { allGuest, addGuestHandler } = props;
+  // this list will show all the guest to the display
   return (
     <section className='all-guest'>
       {allGuest.map((guest) => (

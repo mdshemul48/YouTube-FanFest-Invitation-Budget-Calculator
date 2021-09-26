@@ -4,6 +4,7 @@ import "./TotalCostCard.css";
 const TotalCostCard = (props) => {
   const { invitedGuest } = props;
 
+  // calculation of total cost
   const total = invitedGuest.reduce(
     (prevValue, guest) => guest.InvitationCost + prevValue,
     0
@@ -15,8 +16,9 @@ const TotalCostCard = (props) => {
       <h2>Total Cost: {total}</h2>
       <hr className='line' />
 
+      {/* showing all guest who invited */}
       {invitedGuest.map((guest) => (
-        <h3>
+        <h3 key={guest.id}>
           {guest.name} ({guest.channelName})
         </h3>
       ))}

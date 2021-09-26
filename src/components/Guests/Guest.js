@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { AiOutlineUserAdd } from "react-icons/ai";
 
 import SubText from "./SubText";
@@ -9,10 +8,10 @@ const Guest = (props) => {
   const [Invited, setInvited] = useState(false);
 
   const { addGuestHandler, guestInfo } = props;
-
   const { channelName, name, location, subs, InvitationCost, image, id } =
     guestInfo;
 
+  // this will call the add Guest handler from guestAndCost component
   const addGuestEventHandler = () => {
     addGuestHandler(id);
     setInvited(true);
@@ -20,14 +19,15 @@ const Guest = (props) => {
 
   return (
     <div className='guest'>
-      <img src={image} />
+      <img src={image} alt={name} />
+      {/* guest details */}
       <h4 className='channel-name'>{channelName}</h4>
-
       <SubText title={"AKA"} value={name} />
       <SubText title={"Subscribers"} value={`${subs} million`} />
       <SubText title={"Location"} value={location} />
       <SubText title={"Invitation Cost"} value={InvitationCost} />
 
+      {/* button for adding guest to the list */}
       <button
         className={`add-button ${Invited ? "Invited" : ""}`}
         onClick={addGuestEventHandler}
