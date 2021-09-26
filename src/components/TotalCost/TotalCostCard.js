@@ -1,17 +1,23 @@
 import React from "react";
 
 import "./TotalCostCard.css";
-const TotalCostCard = () => {
+const TotalCostCard = (props) => {
+  const { invitedGuest } = props;
+
+  const total = invitedGuest.reduce(
+    (prevValue, guest) => guest.InvitationCost + prevValue,
+    0
+  );
+
   return (
     <div className='cost-card'>
-      <h2>YouTuber Invited: 5</h2>
-      <h2>Total Cost: 100000</h2>
+      <h2>YouTuber Invited: {invitedGuest.length}</h2>
+      <h2>Total Cost: {total}</h2>
       <hr className='line' />
 
-      <h3>VanossGaming</h3>
-      <h3>VanossGaming</h3>
-      <h3>VanossGaming</h3>
-      <h3>VanossGaming</h3>
+      {invitedGuest.map((guest) => (
+        <h3>{guest.name}</h3>
+      ))}
     </div>
   );
 };
