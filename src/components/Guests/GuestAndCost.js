@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Guests from "./Guests";
 import TotalCostCard from "../TotalCost/TotalCostCard";
 
+import "./GuestAndCost.css";
 const GuestAndCost = () => {
   const [allGuest, setAllGuest] = useState([]);
 
