@@ -1,6 +1,7 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+
+import { AiOutlineUserAdd, AiFillYoutube } from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa";
 
 import SubText from "./SubText";
 
@@ -17,8 +18,13 @@ const Guest = () => {
       <SubText title={"Invitation Cost"} value={"100000$"}></SubText>
 
       <button className='invite-button'>
-        <FontAwesomeIcon icon={faUserPlus} /> Invite
+        <AiOutlineUserAdd /> Invite
       </button>
+
+      <div>
+        <AiFillYoutube />
+        <FaFacebook />
+      </div>
     </div>
   );
 };
