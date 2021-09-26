@@ -6,6 +6,7 @@ import TotalCostCard from "../TotalCost/TotalCostCard";
 import "./GuestAndCost.css";
 const GuestAndCost = () => {
   const [allGuest, setAllGuest] = useState([]);
+  const [invitedGuest, setInvitedGuest] = useState([]);
 
   useEffect(() => {
     fetch("./FakeData.JSON")
